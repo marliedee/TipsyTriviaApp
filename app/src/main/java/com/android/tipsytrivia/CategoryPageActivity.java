@@ -1,4 +1,4 @@
 package com.android.tipsytrivia;
 
-public class CategoryActivity {
+public class CategoryPageActivity {
 }

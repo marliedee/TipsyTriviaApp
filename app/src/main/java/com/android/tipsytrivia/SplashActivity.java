@@ -10,19 +10,16 @@ import com.bumptech.glide.Glide;
 import com.felipecsl.gifimageview.library.GifImageView;
 
 public class SplashActivity extends AppCompatActivity {
-     private GifImageView gifImageView;
+    private GifImageView gifImageView;
     private Handler handler;
     private Runnable runnable;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-
-
-       gifImageView = findViewById(R.id.gif);
+        gifImageView = findViewById(R.id.gif);
         Glide.with(this).load(R.raw.cheers).into(gifImageView);
 
         runnable = new Runnable() {

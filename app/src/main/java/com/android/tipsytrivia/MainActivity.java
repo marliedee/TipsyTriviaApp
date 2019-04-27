@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         TriviaRetrofit.getInstance()
                 .create(TipsyTriviaApi.class)
-                .getTrivia()
+                .getTrivia("14", "easy")
                 .enqueue(new Callback<TipsyResponse>() {
                     @Override
                     public void onResponse(Call<TipsyResponse> call, Response<TipsyResponse> response) {

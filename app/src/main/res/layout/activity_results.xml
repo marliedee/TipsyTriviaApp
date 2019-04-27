@@ -10,30 +10,25 @@
         android:id="@+id/textview_results"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
         android:fontFamily="@font/yahoo"
         android:textAlignment="center"
         android:textColor="@color/Purple"
         android:textSize="48sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/circleImageView"
+        app:layout_constraintBottom_toTopOf="@+id/drink_ImageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Set Results Here"/>
+        tools:text="Set Results Here" />
 
-    <android.support.v4.widget.CircleImageView
-        android:id="@+id/circleImageView"
+    <ImageView
+        android:id="@+id/drink_ImageView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_height="320dp"
         android:src="@drawable/cheersimage"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_results" />
 
 </android.support.constraint.ConstraintLayout>

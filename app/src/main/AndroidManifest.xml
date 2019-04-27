@@ -11,11 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DifficultyPageActivity"></activity>
-        <activity android:name=".WrongResultsActivity" />
+        <activity android:name=".WrongResultActivity"></activity>
+        <activity android:name=".DifficultyPageActivity" />
+        <activity android:name=".RightResultActivity" />
         <activity android:name=".CategoryPageActivity" />
         <activity android:name=".QuestionsPageActivity" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -4,32 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".WrongResultsActivity"
+    tools:context=".RightResultActivity"
     android:background="@color/background">
 
     <TextView
-        android:id="@+id/textview_results"
+        android:id="@+id/right_text_results"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/jumpman"
         android:textAlignment="center"
         android:textColor="@color/Purple"
         android:textSize="48sp"
+        android:text="@string/right_msg"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/drink_ImageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Take a Drink" />
-
-    <com.felipecsl.gifimageview.library.GifImageView
-        android:id="@+id/drink_ImageView"
-        android:layout_width="match_parent"
-        android:layout_height="320dp"
-        android:src="@drawable/cheersimage"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textview_results" />
+        />
 
 </android.support.constraint.ConstraintLayout>

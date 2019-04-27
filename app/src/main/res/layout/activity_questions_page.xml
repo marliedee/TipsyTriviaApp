@@ -34,7 +34,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
     <RadioButton
-        android:id="@+id/textview_multiple_choice_one"
+        android:id="@+id/radio_button_multiple_choice_one"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -43,7 +43,7 @@
         android:onClick="onRadioButtonClicked"/>
 
     <RadioButton
-        android:id="@+id/textview_multiple_choice_two"
+        android:id="@+id/radio_button_multiple_choice_two"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -52,7 +52,7 @@
         android:onClick="onRadioButtonClicked"/>
 
     <RadioButton
-        android:id="@+id/textview_multiple_choice_three"
+        android:id="@+id/radio_button_multiple_choice_three"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20sp"
@@ -61,7 +61,7 @@
         android:onClick="onRadioButtonClicked"/>
 
     <RadioButton
-        android:id="@+id/textview_multiple_choice_four"
+        android:id="@+id/radio_button_multiple_choice_four"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20sp"

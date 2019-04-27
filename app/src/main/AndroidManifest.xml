@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".QuestionsPageActivity"></activity>
+        <activity android:name=".CategoryPageActivity"></activity>
+        <activity android:name=".QuestionsPageActivity" />
         <activity android:name=".MainActivity">
 
         </activity>

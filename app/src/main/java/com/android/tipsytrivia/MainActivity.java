@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         startgame = findViewById(R.id.start);
 
         startgame.setOnClickListener(new View.OnClickListener() {
@@ -35,22 +36,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        TriviaRetrofit.getInstance()
-                .create(TipsyTriviaApi.class)
-                .getTrivia("14", "easy")
-                .enqueue(new Callback<TipsyResponse>() {
-                    @Override
-                    public void onResponse(Call<TipsyResponse> call, Response<TipsyResponse> response) {
-                        Log.d("joestag", "onResponse: " + response.body().getResults().get(0).getCategory());
-
-                    }
-
-                    @Override
-                    public void onFailure(Call<TipsyResponse> call, Throwable t) {
-
-                        Log.d("joestag", "onFailure: " + t.getMessage());
-                    }
-                });
 
     }
 }

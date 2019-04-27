@@ -1,4 +1,14 @@
 <resources>
-    <string name="app_name">TipsyTrivia</string>
+    <string name="app_name">Tipsy Trivia</string>
     <string name="trivia_categories">Categories</string>
+    <string name="difficulty_easy">Easy</string>
+
+
+
+    <string name="rules">Rules</string>
+    <string name="ruleslist">There is only one rule:
+        If you answer incorrect you entire team must take a drink of Alcohol.</string>
+
+    <string name="caution"> Caution: Alcohol will be consumed while playing this game.Do not let the losers drive home.</string>
+
 </resources>

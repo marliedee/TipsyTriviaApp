@@ -10,15 +10,6 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.android.tipsytrivia.model.TipsyResponse;
-import com.android.tipsytrivia.service.TipsyTriviaApi;
-import com.android.tipsytrivia.service.TriviaRetrofit;
-
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends AppCompatActivity {
     private Button startgame;

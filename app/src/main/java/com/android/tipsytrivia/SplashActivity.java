@@ -15,10 +15,6 @@ public class SplashActivity extends AppCompatActivity {
     private Runnable runnable;
 
 
-
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

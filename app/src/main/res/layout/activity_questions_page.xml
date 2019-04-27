@@ -1,43 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".QuestionsPageActivity">
+    tools:context=".QuestionsPageActivity"
+    android:background="@color/lightyellow">
+
     <TextView
-        tools:text="The Question"
-        android:textAlignment="center"
-        android:fontFamily="@font/yahoo"
-        android:textColor="@color/Purple"
-        android:textSize="20sp"
         android:id="@+id/textview_question"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/yahoo"
+        android:textAlignment="center"
+        android:textColor="@color/Purple"
+        android:layout_marginTop="32dp"
+        android:textSize="24sp"
+        tools:text="The Question" />
 
     <RadioButton
         android:id="@+id/textview_multiple_choice_one"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textSize="20sp"
         tools:text="Answer 1" />
 
     <RadioButton
         android:id="@+id/textview_multiple_choice_two"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textSize="20sp"
         tools:text="Answer 2" />
 
     <RadioButton
         android:id="@+id/textview_multiple_choice_three"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="32dp"
         tools:text="Answer 3" />
 
     <RadioButton
         android:id="@+id/textview_multiple_choice_four"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="32dp"
         tools:text="Answer 4"
         />
 </LinearLayout>

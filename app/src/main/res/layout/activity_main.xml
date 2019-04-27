@@ -4,15 +4,93 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/background">
+
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/header"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/jumpman"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="@color/Purple"
+        android:textSize="80sp"
+        app:layout_constraintBottom_toTopOf="@+id/rules"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.67" />
+
+    <TextView
+        android:id="@+id/rules"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="68dp"
+        android:fontFamily="@font/jumpman"
+        android:text="@string/rules"
+        android:textAlignment="center"
+        android:textColor="@color/Purple"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/rules_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/rules_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="44dp"
+        android:fontFamily="monospace"
+        android:text="@string/ruleslist"
+        android:textAlignment="center"
+        android:textColor="@color/Purple"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/caution"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/caution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="84dp"
+        android:fontFamily="monospace"
+        android:text="@string/caution"
+        android:textAlignment="center"
+        android:textColor="@color/Purple"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="153dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="48dp"
+        android:background="@color/Orange"
+        android:text="START GAME"
+        android:textColor="@color/Purple"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

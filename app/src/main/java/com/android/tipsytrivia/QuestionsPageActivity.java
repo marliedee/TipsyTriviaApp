@@ -57,31 +57,24 @@ public class QuestionsPageActivity extends AppCompatActivity {
         String three = wrongAnswers[2];
         String four = questionList.get(0).getCorrect_answer();
         choices = new String[]{one, two, three, four};
-        HashSet<String> set = new HashSet<>();
-        set.add(one);
-        set.add(two);
-        set.add(three);
-        set.add(four);
+
 
         Log.d("marlytag2", ""+ choices.length);
 
-
-        random = new Random();
-        int index = random.nextInt(choices.length);
         textViewquestion = findViewById(R.id.textview_question);
         textView = findViewById(R.id.textview_multiple_choice_one);
         textView2 = findViewById(R.id.textview_multiple_choice_two);
         textView3 = findViewById(R.id.textview_multiple_choice_three);
         textView4 = findViewById(R.id.textview_multiple_choice_four);
+        Collections.shuffle(Arrays.asList(choices));
 
-        if(choices[0].equals(random.nextInt(choices.length)) || choices[1].equals(random.nextInt(choices.length))
-                || choices[2].equals(random.nextInt(choices.length))||choices[0].equals(random.nextInt(choices.length))) {
+
             textViewquestion.setText(Html.fromHtml(questionList.get(0).getQuestion()));
-            textView.setText(choices[random.nextInt(choices.length)]);
-            textView2.setText(choices[random.nextInt(choices.length)]);
-            textView3.setText(choices[random.nextInt(choices.length)]);
-            textView4.setText(choices[random.nextInt(choices.length)]);
-        }
+            textView.setText(choices[0]);
+            textView2.setText(choices[1]);
+            textView3.setText(choices[2]);
+            textView4.setText(choices[3]);
+
         multipleChoiceOne = textView.getText().toString();
         multipleChoiceTwo = textView2.getText().toString();
         multipleChoiceThree = textView3.getText().toString();
@@ -89,15 +82,6 @@ public class QuestionsPageActivity extends AppCompatActivity {
 
     }
 
-    public int getRandomNumber(int index){
-         Collections.shuffle(Arrays.asList(choices.length));
-         for(int i = 0; i<choices.length; i++){
-             if(index == random.nextInt(choices.length){
-                 Collections.shuffle(Arrays.asList(choices.length));
-                 textView.setText();
-             }
-         }
-      }
 
     public void onRadioButtonClicked(View view) {
         // Is the button now checked?

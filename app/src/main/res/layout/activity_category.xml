@@ -43,14 +43,16 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginStart="50dp"
-                android:layout_marginEnd="50dp" />
+                android:layout_marginEnd="50dp"
+                android:src="@drawable/moviez"/>
 
             <ImageView
                 android:id="@+id/tv"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginStart="50dp"
-                android:layout_marginEnd="50dp" />
+                android:layout_marginEnd="50dp"
+                android:src="@drawable/tv"/>
 
         </LinearLayout>
 
@@ -81,14 +83,16 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginStart="50dp"
-                android:layout_marginEnd="50dp" />
+                android:layout_marginEnd="50dp"
+                android:src="@drawable/marylin"/>
 
             <ImageView
                 android:id="@+id/animals"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginStart="50dp"
-                android:layout_marginEnd="50dp" />
+                android:layout_marginEnd="50dp"
+                android:src="@drawable/panda2"/>
 
         </LinearLayout>
 

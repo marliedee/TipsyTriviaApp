@@ -4,25 +4,19 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Html;
-import android.util.Log;
 import android.view.View;
 import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.tipsytrivia.model.Question;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Random;
 
 public class QuestionsPageActivity extends AppCompatActivity {
     private List<Question> questionList;
-    private String correctAnswer;
     private TextView textView;
     private TextView textViewquestion;
     private TextView textView2;
@@ -34,10 +28,9 @@ public class QuestionsPageActivity extends AppCompatActivity {
     private String multipleChoiceFour;
     private String WRONG = "Wrong Answer - Sorry!";
     private String RIGHT = "You are Correct!!";
-    List<String> answers = new ArrayList<>();
-    String [] wrongAnswers = new String[4];
-    Random random;
-    String [] choices;
+    private String[] wrongAnswers = new String[4];
+    private String[] choices;
+    private String correctAnswer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,20 +39,13 @@ public class QuestionsPageActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         questionList = (List<Question>) intent.getSerializableExtra("category");
-//        List<String>answer = new ArrayList<>();
-//        answer.add(questionList.get(0).getIncorrect_answers())
-//        answers.add(questionList.get(0).getIncorrect_answers())
-        String [] wrongAnswers = questionList.get(0).getIncorrect_answers();
-        Log.d("marlytag1", ""+ wrongAnswers.length);
 
+        String[] wrongAnswers = questionList.get(0).getIncorrect_answers();
         String one = wrongAnswers[0];
         String two = wrongAnswers[1];
         String three = wrongAnswers[2];
-        String four = questionList.get(0).getCorrect_answer();
-        choices = new String[]{one, two, three, four};
-
-
-        Log.d("marlytag2", ""+ choices.length);
+        correctAnswer = questionList.get(0).getCorrect_answer();
+        choices = new String[]{one, two, three, correctAnswer};
 
         textViewquestion = findViewById(R.id.textview_question);
         textView = findViewById(R.id.textview_multiple_choice_one);
@@ -68,12 +54,11 @@ public class QuestionsPageActivity extends AppCompatActivity {
         textView4 = findViewById(R.id.textview_multiple_choice_four);
         Collections.shuffle(Arrays.asList(choices));
 
-
-            textViewquestion.setText(Html.fromHtml(questionList.get(0).getQuestion()));
-            textView.setText(choices[0]);
-            textView2.setText(choices[1]);
-            textView3.setText(choices[2]);
-            textView4.setText(choices[3]);
+        textViewquestion.setText(Html.fromHtml(questionList.get(0).getQuestion()));
+        textView.setText(choices[0]);
+        textView2.setText(choices[1]);
+        textView3.setText(choices[2]);
+        textView4.setText(choices[3]);
 
         multipleChoiceOne = textView.getText().toString();
         multipleChoiceTwo = textView2.getText().toString();
@@ -81,7 +66,6 @@ public class QuestionsPageActivity extends AppCompatActivity {
         multipleChoiceFour = textView4.getText().toString();
 
     }
-
 
     public void onRadioButtonClicked(View view) {
         // Is the button now checked?
@@ -145,7 +129,6 @@ public class QuestionsPageActivity extends AppCompatActivity {
                 Toast toast = Toast.makeText(getApplicationContext(), "Make A Selection.", Toast.LENGTH_SHORT);
                 toast.show();
                 break;
-
         }
     }
 }

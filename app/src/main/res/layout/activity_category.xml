@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:card_view="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="300dp"
+    android:layout_height="400dp"
     android:background="@color/Yellow"
     android:orientation="vertical">
 
@@ -25,7 +25,7 @@
     <android.support.v7.widget.CardView
         android:id="@+id/first_two_categories"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         app:layout_constraintBottom_toTopOf="@id/second_two_categories"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -61,7 +61,7 @@
     <android.support.v7.widget.CardView
         android:id="@+id/second_two_categories"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         app:layout_constraintBottom_toTopOf="@id/second_two_categories"
         app:layout_constraintLeft_toLeftOf="parent"

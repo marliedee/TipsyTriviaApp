@@ -1,6 +1,8 @@
 package com.android.tipsytrivia.model;
 
-public class Question {
+import java.io.Serializable;
+
+public class Question implements Serializable {
     private String category;
     private String type;
     private String difficulty;

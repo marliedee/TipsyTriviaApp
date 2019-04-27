@@ -43,6 +43,7 @@ public class CategoryPageActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 retrofitCall("11", "easy");
+                //overridePendingTransition(R.spin_anim.);
             }
         });
 
@@ -64,7 +65,7 @@ public class CategoryPageActivity extends AppCompatActivity {
         animalImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                retrofitCall("27", "easy");
+                retrofitCall("12", "easy");
             }
         });
 

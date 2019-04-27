@@ -6,6 +6,7 @@ import android.util.Log;
 
 import com.android.tipsytrivia.model.TipsyResponse;
 import com.android.tipsytrivia.service.TipsyTriviaApi;
+import com.android.tipsytrivia.service.TriviaRetrofit;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -19,12 +20,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://opentdb.com/")
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
 
-        retrofit.create(TipsyTriviaApi.class)
+        TriviaRetrofit.getInstance()
+                .create(TipsyTriviaApi.class)
                 .getTrivia()
                 .enqueue(new Callback<TipsyResponse>() {
                     @Override

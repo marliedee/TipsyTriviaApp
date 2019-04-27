@@ -8,4 +8,5 @@
     <color name="Yellow">#FFD100</color>
     <color name="lightyellow">#FCE48F</color>
     <color name="background">#fef1a3</color>
+    <color name="black">#000000</color>
 </resources>

@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">TipsyTrivia</string>
     <string name="trivia_categories">Categories</string>
+    <string name="difficulty_easy">Easy</string>
 </resources>

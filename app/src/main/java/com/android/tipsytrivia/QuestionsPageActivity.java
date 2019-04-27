@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.Html;
 import android.view.View;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -47,7 +48,7 @@ public class QuestionsPageActivity extends AppCompatActivity {
         correctAnswer = questionList.get(0).getCorrect_answer();
         choices = new String[]{one, two, three, correctAnswer};
 
-        textViewquestion = findViewById(R.id.textview_question);
+        textViewquestion = findViewById(R.id.question);
         textView = findViewById(R.id.textview_multiple_choice_one);
         textView2 = findViewById(R.id.textview_multiple_choice_two);
         textView3 = findViewById(R.id.textview_multiple_choice_three);
@@ -75,11 +76,11 @@ public class QuestionsPageActivity extends AppCompatActivity {
             case R.id.textview_multiple_choice_one:
                 if (checked) {
                     if (questionList.contains(multipleChoiceOne)) {
-                        Intent wrongIntent = new Intent(this, ResultsActivity.class);
+                        Intent wrongIntent = new Intent(this, WrongResultsActivity.class);
                         wrongIntent.putExtra("wrong", WRONG);
                         startActivity(wrongIntent);
                     } else if (multipleChoiceOne.equals(correctAnswer)) {
-                        Intent rightIntent = new Intent(this, ResultsActivity.class);
+                        Intent rightIntent = new Intent(this, WrongResultsActivity.class);
                         rightIntent.putExtra("right", RIGHT);
                         startActivity(rightIntent);
                     }
@@ -88,11 +89,11 @@ public class QuestionsPageActivity extends AppCompatActivity {
             case R.id.textview_multiple_choice_two:
                 if (checked) {
                     if (questionList.contains(multipleChoiceTwo)) {
-                        Intent wrongIntent = new Intent(this, ResultsActivity.class);
+                        Intent wrongIntent = new Intent(this, WrongResultsActivity.class);
                         wrongIntent.putExtra("wrong", WRONG);
                         startActivity(wrongIntent);
                     } else if (multipleChoiceTwo.equals(correctAnswer)) {
-                        Intent rightIntent = new Intent(this, ResultsActivity.class);
+                        Intent rightIntent = new Intent(this, WrongResultsActivity.class);
                         rightIntent.putExtra("right", RIGHT);
                         startActivity(rightIntent);
                     }
@@ -101,11 +102,11 @@ public class QuestionsPageActivity extends AppCompatActivity {
             case R.id.textview_multiple_choice_three:
                 if (checked) {
                     if (questionList.contains(multipleChoiceThree)) {
-                        Intent wrongIntent = new Intent(this, ResultsActivity.class);
+                        Intent wrongIntent = new Intent(this, WrongResultsActivity.class);
                         wrongIntent.putExtra("wrong", WRONG);
                         startActivity(wrongIntent);
                     } else if (multipleChoiceThree.equals(correctAnswer)) {
-                        Intent rightIntent = new Intent(this, ResultsActivity.class);
+                        Intent rightIntent = new Intent(this, WrongResultsActivity.class);
                         rightIntent.putExtra("right", RIGHT);
                         startActivity(rightIntent);
                     }
@@ -114,11 +115,11 @@ public class QuestionsPageActivity extends AppCompatActivity {
             case R.id.textview_multiple_choice_four:
                 if (checked) {
                     if (questionList.contains(multipleChoiceFour)) {
-                        Intent wrongIntent = new Intent(this, ResultsActivity.class);
+                        Intent wrongIntent = new Intent(this, WrongResultsActivity.class);
                         wrongIntent.putExtra("wrong", WRONG);
                         startActivity(wrongIntent);
                     } else if (multipleChoiceFour.equals(correctAnswer)) {
-                        Intent rightIntent = new Intent(this, ResultsActivity.class);
+                        Intent rightIntent = new Intent(this, WrongResultsActivity.class);
                         rightIntent.putExtra("right", RIGHT);
                         startActivity(rightIntent);
                     }
@@ -129,6 +130,7 @@ public class QuestionsPageActivity extends AppCompatActivity {
                 Toast toast = Toast.makeText(getApplicationContext(), "Make A Selection.", Toast.LENGTH_SHORT);
                 toast.show();
                 break;
+
         }
     }
 }

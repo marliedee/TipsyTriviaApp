@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ResultsActivity">
+    tools:context=".WrongResultsActivity"
+    android:background="@color/background">
 
     <TextView
         android:id="@+id/textview_results"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/yahoo"
+        android:fontFamily="@font/jumpman"
         android:textAlignment="center"
         android:textColor="@color/Purple"
         android:textSize="48sp"
@@ -19,9 +20,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Set Results Here" />
+        tools:text="Take a Drink" />
 
-    <ImageView
+    <com.felipecsl.gifimageview.library.GifImageView
         android:id="@+id/drink_ImageView"
         android:layout_width="match_parent"
         android:layout_height="320dp"

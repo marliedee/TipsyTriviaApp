@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:background="@color/Orange"
+    android:background="@color/background"
     android:layout_height="match_parent"
     tools:context=".DifficultyPageActivity">
 
@@ -12,12 +12,12 @@
         android:id="@+id/selected_category"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/trivia_categories"
+        android:text="Difficulty Level"
         android:textAlignment="center"
-        android:textSize="30sp"
+        android:textSize="40sp"
         android:textColor="@color/Purple"
-        android:fontFamily="@font/yahoo"
-        android:textStyle="bold"/>
+        android:fontFamily="@font/jumpman"
+        />
 
     <TextView
         android:layout_width="match_parent"

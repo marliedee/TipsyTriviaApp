@@ -7,11 +7,11 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.android.tipsytrivia.model.TipsyResponse;
 import com.android.tipsytrivia.service.TipsyTriviaApi;
 import com.android.tipsytrivia.service.TriviaRetrofit;
+import com.bumptech.glide.Glide;
 
 import java.io.Serializable;
 
@@ -25,18 +25,25 @@ public class CategoryPageActivity extends AppCompatActivity {
     private ImageView filmImage;
     private ImageView tvImage;
     private ImageView celebrityImage;
-    private ImageView animalImage;
+    private ImageView musicImage;
     private TipsyResponse tipsyResponse;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category);
+
         categoryTextView = findViewById(R.id.category);
+
         filmImage = findViewById(R.id.film);
+        Glide.with(this).load(R.drawable.moviez3).into(filmImage);
         tvImage = findViewById(R.id.tv);
-        celebrityImage = findViewById(R.id.celebrities);
-        animalImage = findViewById(R.id.animals);
+        Glide.with(this).load(R.drawable.tv).into(tvImage);
+        celebrityImage = findViewById(R.id.marylin);
+        Glide.with(this).load(R.drawable.marylin).into(celebrityImage);
+        musicImage = findViewById(R.id.music);
+        Glide.with(this).load(R.drawable.music).into(musicImage);
 
 
         filmImage.setOnClickListener(new View.OnClickListener() {
@@ -61,7 +68,7 @@ public class CategoryPageActivity extends AppCompatActivity {
             }
         });
 
-        animalImage.setOnClickListener(new View.OnClickListener() {
+        musicImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 retrofitCall("27", "easy");

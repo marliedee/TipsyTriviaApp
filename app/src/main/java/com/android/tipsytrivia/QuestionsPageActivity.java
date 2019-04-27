@@ -52,11 +52,11 @@ public class QuestionsPageActivity extends AppCompatActivity {
             case R.id.textview_multiple_choice_one:
                 if (checked) {
                     if (incorrectChoiceArray.contains(multipleChoiceOne)) {
-                        Intent wrongIntent = new Intent(this, ResultsActivity.class);
+                        Intent wrongIntent = new Intent(this, WrongResultsActivity.class);
                         wrongIntent.putExtra("wrong", WRONG);
                         startActivity(wrongIntent);
                     } else if (multipleChoiceOne.equals(correctAnswer)) {
-                        Intent rightIntent = new Intent(this, ResultsActivity.class);
+                        Intent rightIntent = new Intent(this, WrongResultsActivity.class);
                         rightIntent.putExtra("right", RIGHT);
                         startActivity(rightIntent);
                     }
@@ -65,11 +65,11 @@ public class QuestionsPageActivity extends AppCompatActivity {
             case R.id.textview_multiple_choice_two:
                 if (checked) {
                     if (incorrectChoiceArray.contains(multipleChoiceTwo)) {
-                        Intent wrongIntent = new Intent(this, ResultsActivity.class);
+                        Intent wrongIntent = new Intent(this, WrongResultsActivity.class);
                         wrongIntent.putExtra("wrong", WRONG);
                         startActivity(wrongIntent);
                     } else if (multipleChoiceTwo.equals(correctAnswer)) {
-                        Intent rightIntent = new Intent(this, ResultsActivity.class);
+                        Intent rightIntent = new Intent(this, WrongResultsActivity.class);
                         rightIntent.putExtra("right", RIGHT);
                         startActivity(rightIntent);
                     }
@@ -78,11 +78,11 @@ public class QuestionsPageActivity extends AppCompatActivity {
             case R.id.textview_multiple_choice_three:
                 if (checked) {
                     if (incorrectChoiceArray.contains(multipleChoiceThree)) {
-                        Intent wrongIntent = new Intent(this, ResultsActivity.class);
+                        Intent wrongIntent = new Intent(this, WrongResultsActivity.class);
                         wrongIntent.putExtra("wrong", WRONG);
                         startActivity(wrongIntent);
                     } else if (multipleChoiceThree.equals(correctAnswer)) {
-                        Intent rightIntent = new Intent(this, ResultsActivity.class);
+                        Intent rightIntent = new Intent(this, WrongResultsActivity.class);
                         rightIntent.putExtra("right", RIGHT);
                         startActivity(rightIntent);
                     }
@@ -91,11 +91,11 @@ public class QuestionsPageActivity extends AppCompatActivity {
             case R.id.textview_multiple_choice_four:
                 if (checked) {
                     if (incorrectChoiceArray.contains(multipleChoiceFour)) {
-                        Intent wrongIntent = new Intent(this, ResultsActivity.class);
+                        Intent wrongIntent = new Intent(this, WrongResultsActivity.class);
                         wrongIntent.putExtra("wrong", WRONG);
                         startActivity(wrongIntent);
                     } else if (multipleChoiceFour.equals(correctAnswer)) {
-                        Intent rightIntent = new Intent(this, ResultsActivity.class);
+                        Intent rightIntent = new Intent(this, WrongResultsActivity.class);
                         rightIntent.putExtra("right", RIGHT);
                         startActivity(rightIntent);
                     }

@@ -3,7 +3,7 @@ package com.android.tipsytrivia;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class ResultsActivity extends AppCompatActivity {
+public class WrongResultsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

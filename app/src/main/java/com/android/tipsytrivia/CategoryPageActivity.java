@@ -5,8 +5,11 @@ import android.os.Bundle;
 
 public class CategoryPageActivity extends AppCompatActivity {
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
     }
 }

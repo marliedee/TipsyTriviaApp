@@ -15,7 +15,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:fontFamily="@font/Yahoo"
+        android:fontFamily="@font/yahoo"
         android:text="TIPSY TRIVIA"
         android:background="@color/lightyellow"
         android:textAlignment="center"

@@ -46,7 +46,6 @@ public class QuestionsPageActivity extends AppCompatActivity {
         String two = wrongAnswers[1];
         String three = wrongAnswers[2];
         correctAnswer = questionList.get(0).getCorrect_answer();
-        Log.d("correctanswer", "onCreate: " + correctAnswer);
         choices = new String[]{one, two, three, correctAnswer};
 
         textViewquestion = findViewById(R.id.question);
@@ -57,10 +56,10 @@ public class QuestionsPageActivity extends AppCompatActivity {
         Collections.shuffle(Arrays.asList(choices));
 
         textViewquestion.setText(Html.fromHtml(questionList.get(0).getQuestion()));
-        textView.setText(choices[0]);
-        textView2.setText(choices[1]);
-        textView3.setText(choices[2]);
-        textView4.setText(choices[3]);
+        textView.setText(Html.fromHtml(choices[0]);
+        textView2.setText(Html.fromHtml(choices[1]);
+        textView3.setText(Html.fromHtml(choices[2]);
+        textView4.setText(Html.fromHtml(choices[3]);
 
         multipleChoiceOne = textView.getText().toString();
         multipleChoiceTwo = textView2.getText().toString();

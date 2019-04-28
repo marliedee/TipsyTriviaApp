@@ -56,10 +56,10 @@ public class QuestionsPageActivity extends AppCompatActivity {
         Collections.shuffle(Arrays.asList(choices));
 
         textViewquestion.setText(Html.fromHtml(questionList.get(0).getQuestion()));
-        textView.setText(Html.fromHtml(choices[0]);
-        textView2.setText(Html.fromHtml(choices[1]);
-        textView3.setText(Html.fromHtml(choices[2]);
-        textView4.setText(Html.fromHtml(choices[3]);
+        textView.setText(Html.fromHtml(choices[0]));
+        textView2.setText(Html.fromHtml(choices[1]));
+        textView3.setText(Html.fromHtml(choices[2]));
+        textView4.setText(Html.fromHtml(choices[3]));
 
         multipleChoiceOne = textView.getText().toString();
         multipleChoiceTwo = textView2.getText().toString();

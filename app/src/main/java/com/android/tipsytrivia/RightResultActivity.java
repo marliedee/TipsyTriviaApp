@@ -2,9 +2,11 @@ package com.android.tipsytrivia;
 
 import android.content.Intent;
 import android.media.MediaPlayer;
+import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
@@ -23,9 +25,10 @@ public class RightResultActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_right_results);
 
+
         textView = findViewById(R.id.right_text_results);
-
-
+        Animation animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.wobble_anim);
+        textView.startAnimation(animation);
 
         gifImageView = findViewById(R.id.correct);
         Glide.with(this).load(R.raw.correct).into(gifImageView);
@@ -41,12 +44,14 @@ public class RightResultActivity extends AppCompatActivity {
         handler = new Handler();
         handler.postDelayed(runnable, 5000);
     }
+
     @Override
     protected void onStart() {
         super.onStart();
         MediaPlayer right = MediaPlayer.create(this, R.raw.yay);
         right.start();
     }
+
     @Override
     protected void onDestroy() {
         super.onDestroy();
@@ -54,3 +59,4 @@ public class RightResultActivity extends AppCompatActivity {
         handler.removeCallbacks(runnable);
     }
 }
+

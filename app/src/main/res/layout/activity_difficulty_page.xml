@@ -3,29 +3,27 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:background="@color/background"
     android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
     tools:context=".DifficultyPageActivity">
 
     <TextView
         android:id="@+id/selected_category"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/jumpman"
         android:text="Difficulty Level"
         android:textAlignment="center"
-        android:textSize="40sp"
         android:textColor="@color/Purple"
-        android:fontFamily="@font/jumpman"
-        />
+        android:textSize="40sp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:textColor="@color/Purple"
         android:layout_marginStart="20dp"
         android:text="@string/difficulty_easy"
-        />
+        android:textColor="@color/Purple"
+        android:textSize="20sp" />
 
 </LinearLayout>

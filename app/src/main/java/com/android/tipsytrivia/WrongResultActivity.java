@@ -5,6 +5,8 @@ import android.media.MediaPlayer;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
@@ -24,6 +26,8 @@ public class WrongResultActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_wrong_result);
         textView = findViewById(R.id.wrong_text_results);
+        Animation animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.wobble_anim);
+        textView.startAnimation(animation);
 
         MediaPlayer wrong = MediaPlayer.create(this, R.raw.fail);
         wrong.start();
@@ -57,4 +61,5 @@ public class WrongResultActivity extends AppCompatActivity {
         if (handler != null && runnable != null) ;
         handler.removeCallbacks(runnable);
     }
+
 }

@@ -122,7 +122,6 @@ public class QuestionsPageActivity extends AppCompatActivity {
 
         }
 
-
     }
 
     public void rightAnswer() {

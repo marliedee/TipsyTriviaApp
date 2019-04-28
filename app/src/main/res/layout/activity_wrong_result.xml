@@ -4,24 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".WrongResultActivity"
-    android:background="@color/background">
+    android:background="@color/background"
+    tools:context=".WrongResultActivity">
 
     <TextView
         android:id="@+id/wrong_text_results"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/jumpman"
+        android:text="@string/wrong_msg"
         android:textAlignment="center"
         android:textColor="@color/Purple"
         android:textSize="48sp"
-        android:text="@string/wrong_msg"
         android:textStyle="bold"
+        android:shadowDx="7"
+        android:shadowRadius="7"
+        android:shadowColor="@color/Orange"
         app:layout_constraintBottom_toTopOf="@+id/drink_ImageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.felipecsl.gifimageview.library.GifImageView
         android:id="@+id/drink_ImageView"

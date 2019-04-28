@@ -39,13 +39,13 @@ public class CategoryPageActivity extends AppCompatActivity {
         categoryTextView = findViewById(R.id.category);
 
         filmImage = findViewById(R.id.film);
-        Glide.with(this).load(R.drawable.moviez3).into(filmImage);
+        Glide.with(this).load(R.drawable.moviez).into(filmImage);
         tvImage = findViewById(R.id.tv);
-        Glide.with(this).load(R.drawable.tv).into(tvImage);
+        Glide.with(this).load(R.drawable.tv1).into(tvImage);
         celebrityImage = findViewById(R.id.marylin);
-        Glide.with(this).load(R.drawable.marylin).into(celebrityImage);
+        Glide.with(this).load(R.drawable.marylin2).into(celebrityImage);
         musicImage = findViewById(R.id.music);
-        Glide.with(this).load(R.drawable.music).into(musicImage);
+        Glide.with(this).load(R.drawable.music1).into(musicImage);
 
 
         filmImage.setOnClickListener(new View.OnClickListener() {

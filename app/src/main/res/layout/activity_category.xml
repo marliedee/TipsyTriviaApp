@@ -34,7 +34,6 @@
         android:layout_marginStart="4dp"
         android:layout_marginTop="52dp"
         android:layout_marginEnd="4dp"
-        android:background="@color/Yellow"
         app:layout_constraintEnd_toStartOf="@id/film"
         app:layout_constraintHorizontal_bias="0.289"
         app:layout_constraintStart_toStartOf="parent"
@@ -61,7 +60,6 @@
         android:layout_height="165dp"
         android:layout_marginTop="52dp"
         android:layout_marginEnd="16dp"
-        android:background="@color/Yellow"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/category" />
 
@@ -89,7 +87,6 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
-        android:background="@color/Yellow"
         app:layout_constraintEnd_toStartOf="@+id/tv"
         app:layout_constraintHorizontal_bias="0.242"
         app:layout_constraintStart_toStartOf="parent"
@@ -118,7 +115,6 @@
         android:layout_height="165dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:background="@color/Yellow"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView2" />
 

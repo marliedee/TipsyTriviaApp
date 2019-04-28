@@ -46,7 +46,8 @@ public class SplashActivity extends AppCompatActivity {
         if (handler != null && runnable != null) ;
         handler.removeCallbacks(runnable);
     }
-    private void startAnimation(){
+
+    private void startAnimation() {
         Animation animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.spin_anim);
         titleTextView.startAnimation(animation);
     }

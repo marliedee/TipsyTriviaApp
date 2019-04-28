@@ -19,18 +19,19 @@ public class WrongResultActivity extends AppCompatActivity {
 
     private Handler handler;
     private Runnable runnable;
+    private MediaPlayer wrong;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_wrong_result);
+
+        wrong = MediaPlayer.create(this, R.raw.fail);
+        wrong.start();
         textView = findViewById(R.id.wrong_text_results);
         Animation animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.wobble_anim);
         textView.startAnimation(animation);
-
-        MediaPlayer wrong = MediaPlayer.create(this, R.raw.fail);
-        wrong.start();
 
         gifImageView = findViewById(R.id.drink_ImageView);
         Glide.with(this).load(R.raw.cheers).into(gifImageView);
@@ -39,20 +40,13 @@ public class WrongResultActivity extends AppCompatActivity {
             @Override
             public void run() {
                 startActivity(new Intent(getApplicationContext(), CategoryPageActivity.class));
+                wrong.release();
                 finish();
             }
 
         };
         handler = new Handler();
         handler.postDelayed(runnable, 5000);
-    }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-        MediaPlayer wrong = MediaPlayer.create(this, R.raw.fail);
-        wrong.start();
-
     }
 
     @Override

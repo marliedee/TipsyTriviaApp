@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RightResultActivity"
-    android:background="@color/white">
+    android:background="@color/white"
+    tools:context=".RightResultActivity">
 
     <TextView
         android:id="@+id/right_text_results"

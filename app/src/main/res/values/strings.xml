@@ -17,7 +17,7 @@
 
     <string name="rules">Rules</string>
     <string name="ruleslist">There is only one rule:
-        If you answer incorrect you entire team must take a drink of Alcohol.</string>
+        If you answer incorrectly, you must take a drink of Alcohol.</string>
 
     <string name="caution"> Caution: Alcohol will be consumed while playing this game.\n Winners DO NOT let the losers drive home.</string>
     <string name="wrong_msg">Take a Drink</string>

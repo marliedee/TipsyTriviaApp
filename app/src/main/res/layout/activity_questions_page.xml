@@ -1,73 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".QuestionsPageActivity"
-    android:background="@color/lightyellow">
+    android:background="@color/lightyellow"
+    android:orientation="vertical"
+    tools:context=".QuestionsPageActivity">
 
     <TextView
         android:id="@+id/question_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:fontFamily="@font/jumpman"
         android:textAlignment="center"
         android:textColor="@color/Purple"
-        android:layout_marginTop="32dp"
         android:textSize="30sp"
         tools:text="@string/question" />
+
     <TextView
         android:id="@+id/question"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:fontFamily="@font/jumpman"
         android:textAlignment="center"
         android:textColor="@color/Purple"
-        android:layout_marginTop="32dp"
         android:textSize="25sp"
         tools:text="......." />
 
 
-<RadioGroup
-    android:id="@+id/radio_choices"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-    <RadioButton
-        android:id="@+id/radio_button_multiple_choice_one"
+    <RadioGroup
+        android:id="@+id/radio_choices"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:textSize="20sp"
-        tools:text="Answer 1"
-        android:onClick="onRadioButtonClicked"/>
+        android:layout_height="wrap_content">
 
-    <RadioButton
-        android:id="@+id/radio_button_multiple_choice_two"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:textSize="20sp"
-        tools:text="Answer 2"
-        android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/radio_button_multiple_choice_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:onClick="onRadioButtonClicked"
+            android:textSize="20sp"
+            tools:text="Answer 1" />
 
-    <RadioButton
-        android:id="@+id/radio_button_multiple_choice_three"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:layout_marginTop="32dp"
-        tools:text="Answer 3"
-        android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/radio_button_multiple_choice_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:onClick="onRadioButtonClicked"
+            android:textSize="20sp"
+            tools:text="Answer 2" />
 
-    <RadioButton
-        android:id="@+id/radio_button_multiple_choice_four"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:layout_marginTop="32dp"
-        tools:text="Answer 4"
-        android:onClick="onRadioButtonClicked"
-        />
-</RadioGroup>
+        <RadioButton
+            android:id="@+id/radio_button_multiple_choice_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:onClick="onRadioButtonClicked"
+            android:textSize="20sp"
+            tools:text="Answer 3" />
+
+        <RadioButton
+            android:id="@+id/radio_button_multiple_choice_four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:onClick="onRadioButtonClicked"
+            android:textSize="20sp"
+            tools:text="Answer 4" />
+    </RadioGroup>
 </LinearLayout>

@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -50,7 +52,8 @@ public class CategoryPageActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 retrofitCall("11", "easy");
-                //overridePendingTransition(R.spin_anim.);
+                Animation animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.wobble_anim);
+                filmImage.startAnimation(animation);
             }
         });
 
@@ -58,6 +61,8 @@ public class CategoryPageActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 retrofitCall("14", "easy");
+                Animation animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.wobble_anim);
+                tvImage.startAnimation(animation);
 
             }
         });
@@ -66,6 +71,8 @@ public class CategoryPageActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 retrofitCall("26", "easy");
+                Animation animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.wobble_anim);
+                celebrityImage.startAnimation(animation);
             }
         });
 
@@ -73,6 +80,8 @@ public class CategoryPageActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 retrofitCall("12", "easy");
+                Animation animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.wobble_anim);
+                musicImage.startAnimation(animation);
             }
         });
 
@@ -98,34 +107,6 @@ public class CategoryPageActivity extends AppCompatActivity {
                         Log.d("joestag", "onFailure: " + t.getMessage());
                     }
                 });
-
-//        filmImage.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//            }
-//        });
-//
-//        tvImage.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//            }
-//        });
-//
-//        celebrityImage.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//            }
-//        });
-//
-//        animalImage.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//            }
-//        });
 
     }
 }

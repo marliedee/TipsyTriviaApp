@@ -16,10 +16,10 @@
 
 
     <string name="rules">Rules</string>
-    <string name="ruleslist">There is only one rule:
+    <string name="ruleslist">There is only one rule:\n
         If you answer incorrectly, you must take a drink of Alcohol.</string>
 
-    <string name="caution"> Caution: Alcohol will be consumed while playing this game.\n Winners DO NOT let the losers drive home.</string>
+    <string name="caution"> Caution: Alcohol will be\n consumed while playing\n this game.\n Winners DO NOT let the losers drive home.</string>
     <string name="wrong_msg">Take a Drink</string>
     <string name="right_msg">You are correct!!</string>
 

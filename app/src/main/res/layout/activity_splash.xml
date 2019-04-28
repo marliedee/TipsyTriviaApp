@@ -33,7 +33,7 @@
 
     <com.felipecsl.gifimageview.library.GifImageView
         android:id="@+id/gif"
-        android:layout_width="444dp"
+        android:layout_width="match_parent"
         android:layout_height="346dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"

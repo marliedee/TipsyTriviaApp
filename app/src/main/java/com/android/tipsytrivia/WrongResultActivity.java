@@ -23,7 +23,7 @@ public class WrongResultActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wrong_result);
         textView = findViewById(R.id.wrong_text_results);
-        Animation animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.scale_anim);
+        Animation animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.wobble_anim);
         textView.startAnimation(animation);
 
         gifImageView = findViewById(R.id.drink_ImageView);

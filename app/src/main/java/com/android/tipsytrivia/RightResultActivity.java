@@ -25,7 +25,7 @@ public class RightResultActivity extends AppCompatActivity {
         setContentView(R.layout.activity_right_results);
 
         textView = findViewById(R.id.right_text_results);
-        Animation animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.scale_anim);
+        Animation animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.wobble_anim);
         textView.startAnimation(animation);
 
         gifImageView = findViewById(R.id.correct);

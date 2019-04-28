@@ -5,21 +5,37 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".RightResultActivity"
-    android:background="@color/background">
+    android:background="@color/white">
 
     <TextView
         android:id="@+id/right_text_results"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_marginBottom="28dp"
         android:fontFamily="@font/jumpman"
+        android:text="@string/right_msg"
         android:textAlignment="center"
         android:textColor="@color/Purple"
-        android:textSize="48sp"
-        android:text="@string/right_msg"
+        android:textSize="45sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/correct"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.felipecsl.gifimageview.library.GifImageView
+        android:id="@+id/correct"
+        android:layout_width="match_parent"
+        android:layout_height="399dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="88dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

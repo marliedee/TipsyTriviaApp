@@ -78,7 +78,8 @@ public class CategoryPageActivity extends AppCompatActivity {
 
 
     }
-    private void retrofitCall(String category, String difficulty){
+
+    private void retrofitCall(String category, String difficulty) {
         TriviaRetrofit.getInstance()
                 .create(TipsyTriviaApi.class)
                 .getTrivia(category, difficulty)

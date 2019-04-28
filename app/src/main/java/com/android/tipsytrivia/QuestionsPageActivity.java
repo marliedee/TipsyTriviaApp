@@ -48,12 +48,17 @@ public class QuestionsPageActivity extends AppCompatActivity {
         correctAnswer = questionList.get(0).getCorrect_answer();
         choices = new String[]{one, two, three, correctAnswer};
 
+        String[] allQuestions = new String[]{questionList.get(0).getQuestion()};
+
         textViewquestion = findViewById(R.id.question);
         textView = findViewById(R.id.radio_button_multiple_choice_one);
         textView2 = findViewById(R.id.radio_button_multiple_choice_two);
         textView3 = findViewById(R.id.radio_button_multiple_choice_three);
         textView4 = findViewById(R.id.radio_button_multiple_choice_four);
+
         Collections.shuffle(Arrays.asList(choices));
+
+        Collections.shuffle(Arrays.asList(allQuestions));
 
         textViewquestion.setText(Html.fromHtml(questionList.get(0).getQuestion()));
         textView.setText(Html.fromHtml(choices[0]));

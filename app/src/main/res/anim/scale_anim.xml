@@ -3,7 +3,7 @@
     android:fillAfter="true">
 
     <scale
-        android:fromXScale="0.5"
+        android:fromXScale="0.8"
         android:fromYScale="1.0"
         android:toXScale="1.1"
         android:toYScale="1.1"

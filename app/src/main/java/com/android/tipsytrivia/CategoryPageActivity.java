@@ -85,7 +85,6 @@ public class CategoryPageActivity extends AppCompatActivity {
             }
         });
 
-
     }
 
     private void retrofitCall(String category, String difficulty) {
